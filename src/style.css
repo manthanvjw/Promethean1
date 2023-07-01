@@ -1,0 +1,80 @@
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
+  .controls {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 30px;
+  }
+  
+  .title {
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .rover-direction,
+  .arm-positions {
+    margin-bottom: 30px;
+    text-align: left;
+  }
+  
+  .button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .rover-button,
+  .arm-button {
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 2px solid #00ff00;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .rover-button:hover,
+  .arm-button:hover {
+    border-color: #00ffff;
+  }
+  
+  .force-stop {
+    background-color: #f00;
+    border-color: #ff0000;
+  }
+  
+  .arm-positions p,
+  .rover-direction p {
+    margin-top: 10px;
+  }
+  
+  .camera-feed {
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .video-feed {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
