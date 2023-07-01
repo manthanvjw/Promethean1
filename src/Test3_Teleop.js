@@ -5,8 +5,9 @@ const RoverControl = () => {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const ros = new ROSLIB.Ros({
-        url: 'wss://fb44-106-195-67-231.ngrok-free.app/',
+        url: 'ws://192.168.18.159:9090',
       });
+      
 
       const cmdVelTopic = new ROSLIB.Topic({
         ros: ros,
